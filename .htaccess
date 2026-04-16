@@ -1,0 +1,10 @@
+# Friendly redirects for PDF downloads
+# Maps clean URLs to files in /assets/pdf/
+
+Redirect 301 /pdfs/student-list-2024-25.pdf /assets/pdf/Student%20List%202024%2025.PDF
+Redirect 301 /pdfs/student-list-2025-26.pdf /assets/pdf/Student%20List%202025%2026.PDF
+Redirect 301 /pdfs/staff-list.pdf /assets/pdf/Staff%20List.pdf
+Redirect 301 /pdfs/prospectus.pdf /assets/prospectus.pdf
+Redirect 301 /pdfs/2018-19.pdf /assets/pdf/2018-19.PDF
+Redirect 301 /pdfs/2019-20.pdf /assets/pdf/2019-20.PDF
+Redirect 301 /pdfs/2022-23.pdf /assets/pdf/2022-23.PDF

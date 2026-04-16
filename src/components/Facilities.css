@@ -1,0 +1,77 @@
+.facilities-section {
+  padding: 80px 3%;     /* MAX WIDTH */
+  background: white;
+  text-align: center;
+}
+
+.facilities-section h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #1e293b;
+}
+
+/* GRID — EXTRA WIDE */
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 35px;
+}
+
+/* CARD */
+
+.facility-card {
+  border: 1px solid #e5e7eb;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  color: #0f172a;
+  background: #fff;
+  white-space: nowrap;        /* ONE LINE TEXT */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.facility-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+
+/* LAPTOP */
+
+@media (max-width: 1100px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 800px) {
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .facility-card {
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+  .facilities-section {
+    padding: 50px 5%;
+  }
+
+  .facility-card {
+    font-size: 15px;
+    padding: 22px 24px;
+  }
+}
